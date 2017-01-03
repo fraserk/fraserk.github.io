@@ -1,0 +1,24 @@
+---
+layout: default
+---
+<section class="section is-custom-color">
+
+  <div class="container">
+    <article class="box" itemscope itemtype="http://schema.org/BlogPosting">
+
+      <header class="">
+        <h1 class="title" itemprop="name headline">{{ page.title | escape }}</h1>
+        <p class="content"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
+      </header>
+
+      <div class="content" itemprop="articleBody">
+        {{ content }}
+      </div>
+
+      {% if site.disqus.shortname %}
+      {% include disqus_comments.html %}
+      {% endif %}
+    </article>
+
+  </div>
+</section>
