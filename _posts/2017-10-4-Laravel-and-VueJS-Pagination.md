@@ -126,6 +126,7 @@ in recources/assets/js/components
 
 For the sake of keeping this simple we are just going to use the welcome view that comes with laravel.  Edit it like the following.
 _Now edit the examle.vue file._
+
 ~~~
 @extends('layouts.app')
   @section('content')
@@ -135,9 +136,10 @@ _Now edit the examle.vue file._
           </example>
 
   @endsection
-
 ~~~
-Here is what the table in the template look like.
+
+Here is what the table in the template looks like.
+
 ~~~
 <template>
 <table class="table table-striped">
@@ -192,7 +194,8 @@ Here is what the table in the template look like.
                     </table>
 </template>
 ~~~
-Here is the vue methos looks like, with the ajax calls to  to laravel.
+Here is the vue methods looks like, with the ajax calls to  to laravel.
+
 ~~~
 <script>
     export default {
@@ -234,7 +237,11 @@ Here is the vue methos looks like, with the ajax calls to  to laravel.
     }
 </script>
 ~~~
+
+Here's a quick demo.
+
 ![Pagination demo](/assets/images/pagination-demo.gif)
+
 
 
 
